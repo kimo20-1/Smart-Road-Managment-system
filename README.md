@@ -1,9 +1,9 @@
 # Smart Road Managment System 
-Overview
+## Overview
 The Vehicle Violation Detection System leverages big data and machine learning to identify vehicles violating traffic rules. 
 This project aims to enhance road safety and streamline traffic management by providing a reliable and scalable solution for traffic law enforcement.
 
-Features
+## Features
 Real-time Vehicle Detection: Utilizes computer vision techniques to detect vehicles from live video feeds.
 Violation Identification: Identifies various types of traffic violations such as speeding, running red lights, and illegal parking.
 Big Data Processing: Employs big data technologies to handle large volumes of traffic data efficiently.

@@ -1,0 +1,33 @@
+--> cd c:/kafka
+
+1- Start zookeeper
+
+D:\Kafka\kafka_2.12-3.6.0\bin\windows\zookeeper-server-start.bat D:\Kafka\kafka_2.12-3.6.0\config\zookeeper.properties
+
+2- Start kafka
+
+D:\Kafka\kafka_2.12-3.6.0\bin\windows\kafka-server-start.bat D:\Kafka\kafka_2.12-3.6.0\config\server.properties
+
+3- Create topic
+
+D:\Kafka\kafka_2.12-3.6.0\bin\windows\kafka-topics.bat --create --topic travel-data  --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+4- producer
+
+D:\Kafka\kafka_2.12-3.6.0\bin\windows\kafka-console-producer.bat --topic testnifi  --bootstrap-server localhost:9092
+
+5- consumer
+
+D:\Kafka\kafka_2.12-3.6.0\bin\windows\kafka-console-consumer.bat --topic travel_data  --bootstrap-server localhost:9092 --from-beginning
+
+D:\Kafka\kafka_2.12-3.6.0\bin\windows\kafka-console-consumer.bat --topic delays  --bootstrap-server localhost:9092 --from-beginning
+
+-----------------
+
+The topics list:
+D:\Kafka\kafka_2.12-3.6.0\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+to delete topic
+D:\Kafka\kafka_2.12-3.6.0\bin\windows\kafka-topics.bat --delete --topic your_topic_name --bootstrap-server localhost:9092
+
+
